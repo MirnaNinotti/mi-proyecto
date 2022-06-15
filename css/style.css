@@ -137,7 +137,17 @@ nav a{
     
 
 }
+.reserva {
+    margin-top: 5%;
+    text-align: justify;
+    color: brown;
 
+}
+.label {
+    margin-top: 20%;
+    font-size: 100%;
+
+}
 /*RESPONSIVE DESIGN - MEDIA QUERY - MOBILE LAST*/
 /*MOBILE LAST = MAX WIDTH*/
 @media (max-width: 768px) {
