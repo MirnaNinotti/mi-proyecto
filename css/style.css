@@ -17,64 +17,28 @@
       background-color: rgb(170, 170, 222);
       color: black;
   }
+  /*HEADER*/
 .header { grid-area: header; 
-    background-color: rgb(143, 171, 232);
+    background-image: linear-gradient(to left,black, rgb(20, 20, 117), rgb(84, 125, 191), white 90% );
+    background-color: blue;
+    }
+.logo2{
+     width: 150px;
+     margin-top: 5px;
     
     }
-  
-.h1{
+
+.tittle{
     display: inline-flexbox;
-    color: rgb(238, 233, 233);
-    font-size: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-}
-.h2{
-    display: inline-flexbox;
-    color: rgb(69, 37, 135);
-    font-size: 30px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
+    transform: skew(-15deg);
+
 }
 
 
-/*Nav*/
-.navbar { grid-area: nav; 
-     background-color: rgb(50, 12, 127);
-     display: flex;
-     height: 100px;
-     position: sticky;
-     top: 0px;
-     margin:0px;
-    
 
-}
-.logo2{
-    width: 100px;
-
-}
-.navbar ul{
-display: flex;
-align-items: center;
-list-style-type: disc;
-
-}
-.navbar li{
-    padding: 20px;
-    margin: 0 30px;
-    list-style: none;
-    font-size: 30px;
-    font-family:Arial, Helvetica, sans-serif;
-    width: 18%;
-  
-}
-.nav li:hover{
-    background-color: black;
-}
-.nav a{
-    color: rgb(245, 237, 242);
-    text-decoration: none;
-}
 /*main*/
 .main {
     grid-area: main;
@@ -90,14 +54,9 @@ list-style-type: disc;
 }
 
 
-.primerasection{
-    grid-area: primerasection;
-    display: grid;
-    margin-top: 5%;
-    width: 20%;
-    height: 30%;
-    margin-right: 10%;
-    margin-left: 17%;
+.primerasection img{
+    width: 100%;
+ 
 }
 .segundasection{
     grid-area: segundasection;
@@ -107,15 +66,9 @@ list-style-type: disc;
     margin-left: 5%;
 
 }
-.tercerasection{
-    grid-area: tercerasection;
-    display: flex;
-    margin-top: 10%;
-    width: 20%;
-    height: 20%;
-    margin-right: 10%;
-    margin-left: 17%;
-    max-width: 10px;
+.tercerasection img{
+    width: 100%;
+   
 }
 
 .cuartasection{
@@ -129,27 +82,54 @@ list-style-type: disc;
 .quintasection{
     margin-top: 10%;
 }
-
-.footer { grid-area: footer;
-    display: grid;
-    background-color: rgb(38, 84, 153);
+.sextasection{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    margin-top: 5%;
+}
+.imgmapa{
+    margin-left: 25%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+.footer { 
+    display: flex;
+    background-color: #2b2b2b;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
     
+
+}
+.footer ol{
+    display: flex;
+}
+.footer ol li a{
+    color: white;
+    padding: 1rem;
+}
+.footer p{
+    color: #3b3b3b;
 
 }
 .reserva {
     margin-top: 5%;
-    text-align: justify;
-    color: brown;
+    text-align: center;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
 
 }
 .label {
-    margin-top: 20%;
+    margin-top: 10px;
     font-size: 100%;
+    display: flex;
+    position: sticky;
 
 }
 /*RESPONSIVE DESIGN - MEDIA QUERY - MOBILE LAST*/
 /*MOBILE LAST = MAX WIDTH*/
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .grilla{
         grid-template-areas: 
         "header header header header"
@@ -168,7 +148,7 @@ list-style-type: disc;
     
 }
 /*DISPOSITIVOS CHICOS // SM */
-@media (max-with:375px) {
+/* @media (max-with:375px) {
     .tercerasection{
         margin-left: 10%;
     }
@@ -191,6 +171,10 @@ list-style-type: disc;
     font-size: 50%;
     color: black;
 }
+.btn button:hover{
+    transform: scale(1.15);
+    transition: 10s;
+}
 .form-control{
     font-size: 53%;
     max-width: 93%;
@@ -200,4 +184,4 @@ list-style-type: disc;
 .col{
     max-width: 110%;
     margin-left: 7%;
-}
+} 
