@@ -5,53 +5,29 @@
 }
 
     
-
-
-.grilla {
-    display: grid;  
-    grid-template-areas: 
-      "header header header header"
-      "nav nav nav nav"
-      ". main main ."
-      ". footer . ."; 
-      background-color: rgb(170, 170, 222);
-      color: black;
-  }
   /*HEADER*/
-.header { grid-area: header; 
-    background-image: linear-gradient(to left,black, rgb(20, 20, 117), rgb(84, 125, 191), white 90% );
-    background-color: blue;
+.navbar {
+    background-image: linear-gradient(to left,black, rgb(20, 20, 117), rgb(84, 125, 191), white 85%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     }
+
+
+.navbar .nav-item:hover .nav-link{
+    color: black;
+    transform: scale(1.30);
+
+}
 .logo2{
      width: 150px;
      margin-top: 5px;
     
     }
 
-.tittle{
-    display: inline-flexbox;
-    font-size: 60px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-    transform: skew(-15deg);
-
-}
-
-
 
 /*main*/
-.main {
-    grid-area: main;
-    align-items: center;
-    grid-template-columns: 2.3fr; 
-    grid-template-rows: 1.2fr 1.3fr 1.5fr 1.5fr; 
-    grid-template-areas: 
-      "primerasection primerasection"
-      "segundasection segundasection"
-      "tercerasection tercerasection"
-      "cuartasection cuartasection"; 
-    background-color: rgb(137, 195, 221);
-}
 
 
 .primerasection img{
@@ -124,7 +100,34 @@
     margin-top: 10px;
     font-size: 100%;
     display: flex;
-    position: sticky;
+    flex-direction: row;
+
+}
+.btn btn-info:focus{
+    transform: scale(1.15);
+    transition: .8s;
+    border: 0;
+    color: black;
+
+}
+.formulario{
+    text-align: center;
+    font-size: 5rem;
+    border-color: black;
+    border-width: 2px;
+    margin-top: 5%;
+    
+}
+
+
+.col {
+    border-radius: 15px;
+    padding: 5%;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 0,5rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
 
 }
 /*RESPONSIVE DESIGN - MEDIA QUERY - MOBILE LAST*/
